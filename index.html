@@ -1,0 +1,162 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AEVUM - Timeless In Essence</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Georgia', serif; }
+    .vintage-border { border: 1px solid #d1c7b7; }
+    .accent { color: #4b3f35; }
+    .bg-accent { background-color: #f7f4ef; }
+    .highlight { color: #5b4636; }
+    .btn-accent { background-color: #4b3f35; color: white; }
+    .btn-accent:hover { background-color: #2e261f; }
+    .fade-in { animation: fadeIn 1.5s ease-in forwards; }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.95); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    .scroll-fade {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    .scroll-fade.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-accent text-black">
+  <!-- Splash Screen -->
+  <div id="splash" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-accent">
+    <img src="img/logo.png" alt="Logo AEVUM" class="w-40 h-40 mb-6 fade-in">
+    <button onclick="hideSplash()" class="btn-accent px-6 py-3 rounded-full transition mt-4">Masuk</button>
+  </div>  <!-- Konten Website -->  <div id="main-content" class="hidden">
+    <!-- Header -->
+    <header class="text-center py-10 border-b border-gray-300 scroll-fade">
+      <h1 class="text-5xl tracking-wide font-semibold accent">AEVUM</h1>
+      <p class="italic text-lg text-gray-600">Timeless In Essence</p>
+    </header><!-- Tentang AEVUM -->
+<section class="text-center px-6 py-12 max-w-3xl mx-auto scroll-fade" id="tentang">
+  <h2 class="text-2xl font-medium mb-6">Tentang Kami</h2>
+  <p class="text-gray-700 leading-relaxed">AEVUM bukan sekadar parfum — ini adalah penghormatan terhadap keindahan yang abadi. Setiap botol merefleksikan keyakinan kami bahwa keanggunan sejati terletak pada kesederhanaan dan ketahanan waktu. Selamat datang di dunia di mana waktu berhenti dan keharuman berbicara.</p>
+</section>
+
+<!-- Galeri Produk -->
+<section class="bg-white py-12 px-6 scroll-fade" id="produk">
+  <h2 class="text-center text-2xl font-medium mb-10">Parfum Unggulan</h2>
+  <div class="max-w-xl mx-auto rounded-lg overflow-hidden shadow-lg">
+    <img src="img/tangan.png" alt="AEVUM Eau De Parfum" class="w-full h-auto">
+    <div class="p-6 bg-white">
+      <h3 class="text-xl font-semibold mb-2">AEVUM Eau De Parfum</h3>
+      <p class="text-gray-600 text-sm mb-4">Unisex | Eau De Parfum</p>
+      <p class="text-gray-700">Dirancang untuk memancarkan keanggunan abadi dengan kesederhanaan yang menawan.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Filosofi Parfum -->
+<section class="bg-gray-100 py-12 px-6 scroll-fade" id="filosofi">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-2xl font-medium mb-6 text-center">Filosofi Parfum AEVUM</h2>
+    <p class="text-gray-700 leading-relaxed mb-4">Dalam setiap tetes parfum, tersembunyi sebuah kisah. Bagi kami di AEVUM, keharuman adalah kenangan pribadi, bisikan masa lalu, dan janji masa depan. Bukan sekadar aroma, namun perasaan yang abadi.</p>
+    <p class="text-gray-700 leading-relaxed">Parfum kami diracik untuk menggetarkan emosi secara halus, membangkitkan rasa nyaman, akrab, dan keanggunan yang tak lekang oleh waktu. Karena bagi kami, parfum bukan tren—ia adalah warisan.</p>
+  </div>
+</section>
+
+</section>
+
+<!-- Daftar Varian -->
+<section class="py-12 px-6 max-w-4xl mx-auto scroll-fade">
+  <h2 class="text-center text-2xl font-medium mb-6">List Varian Parfum</h2>
+  <div class="border-2 border-gray-300 rounded-xl shadow-lg bg-white p-6">
+    <img src="img/listparfume.png" alt="List Varian Parfum AEVUM" class="mx-auto w-full max-w-3xl rounded-md">
+  </div>
+  <div class="text-center text-sm text-gray-600 mt-4">Tersedia dalam ukuran 30ml, 50ml, dan 100ml.</div>
+</section>
+
+
+<!-- Varian Botol -->
+<section class="py-12 px-6 max-w-5xl mx-auto scroll-fade" id="varian-botol">
+  <h2 class="text-center text-2xl font-medium mb-6">Varian Bentuk Botol</h2>
+  <p class="text-center text-gray-700 max-w-2xl mx-auto mb-10">
+    AEVUM menghadirkan berbagai bentuk botol parfum sebagai refleksi dari kepribadian dan gaya hidup Anda. Setiap bentuk memiliki karakter yang unik dan estetika tersendiri.
+  </p>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="text-center">
+      <img src="img/botolbulat3.png" alt="Botol Bulat AEVUM" class="mx-auto w-28 h-auto mb-4">
+      <h3 class="font-semibold text-lg mb-2">Botol lelabo</h3>
+      <p class="text-sm text-gray-600">Desain klasik yang menggambarkan kelembutan dan harmoni.</p>
+    </div>
+    <div class="text-center">
+      <img src="img/botoladv3.png" alt="Botol Kotak AEVUM" class="mx-auto w-28 h-auto mb-4">
+      <h3 class="font-semibold text-lg mb-2">Botol ADG doft</h3>
+      <p class="text-sm text-gray-600">Elegan dan modern—menyampaikan kesan kokoh dan percaya diri.</p>
+    </div>
+    <div class="text-center">
+      <img src="img/botolhitamdoft3.png" alt="Botol Hitam AEVUM" class="mx-auto w-28 h-auto mb-4">
+      <h3 class="font-semibold text-lg mb-2">Botol Lakoste</h3>
+      <p class="text-sm text-gray-600">Misterius dan mewah. Untuk aroma yang intens dan berani.</p>
+    </div>
+    <div class="text-center">
+      <img src="img/botolkotak3.png" alt="Botol Bening AEVUM" class="mx-auto w-28 h-auto mb-4">
+      <h3 class="font-semibold text-lg mb-2">Botol Hermest</h3>
+      <p class="text-sm text-gray-600">Transparan dan jujur, menonjolkan warna alami dari parfum.</p>
+    </div>
+  </div>
+</section>
+<!-- FAQ -->
+<section class="py-12 px-6 max-w-3xl mx-auto scroll-fade" id="faq">
+  <h2 class="text-2xl font-medium mb-6 text-center">Pertanyaan yang Sering Diajukan</h2>
+  <div class="space-y-6">
+    <div>
+      <h3 class="font-semibold text-lg mb-1">Apakah AEVUM memiliki varian khusus pria atau wanita?</h3>
+      <p class="text-gray-700">Ya, kami menyediakan varian untuk pria, wanita, dan juga unisex. Anda bisa memilih sesuai dengan preferensi pribadi Anda.</p>
+    </div>
+    <div>
+      <h3 class="font-semibold text-lg mb-1">Berapa lama ketahanan aroma AEVUM?</h3>
+      <p class="text-gray-700">AEVUM dirancang untuk tahan lama, rata-rata antara 6-10 jam tergantung aktivitas dan jenis kulit.</p>
+    </div>
+    <div>
+      <h3 class="font-semibold text-lg mb-1">Apakah saya bisa mencoba sampel terlebih dahulu?</h3>
+      <p class="text-gray-700">Tentu. Kami menyediakan sampel mini untuk membantu Anda menentukan varian yang paling sesuai dengan karakter Anda.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Pemesanan -->
+<section class="text-center py-12 px-6 scroll-fade" id="pesan">
+  <h2 class="text-2xl font-medium mb-4">Pesan Sekarang</h2>
+  <p class="mb-4 text-gray-700">Rasakan keharuman abadi bersama AEVUM.</p>
+  <a href="https://wa.me/6281224720011" target="_blank" class="inline-block btn-accent py-3 px-8 rounded-full transition">Pesan via WhatsApp</a>
+</section>
+
+<!-- Footer -->
+<footer class="text-center text-sm text-gray-500 py-6 border-t border-gray-200 scroll-fade">
+  &copy; 2025 AEVUM. Seluruh hak cipta dilindungi.
+</footer>
+
+  </div>  <!-- Script Splash dan Scroll -->  <script>
+    function hideSplash() {
+      document.getElementById('splash').style.display = 'none';
+      document.getElementById('main-content').classList.remove('hidden');
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const hiddenSections = document.querySelectorAll('.scroll-fade');
+      hiddenSections.forEach(section => observer.observe(section));
+    });
+  </script></body>
+</html>
